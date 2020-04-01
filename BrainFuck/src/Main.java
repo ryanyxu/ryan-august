@@ -16,7 +16,7 @@ public class Main {
 		int i = 0;
 		int count = 0;
 		while (i < text.length()) {
-			//System.out.println(list);
+			System.out.println(list);
 			if (index >= list.size()) {list.add(index, 0);}
 			switch (text.charAt(i)) {
 			case '<' : 
@@ -72,6 +72,8 @@ public class Main {
 					i++;
 					break;
 				}
+			default:
+				i++;
 			}
 		}
 		console.close();
